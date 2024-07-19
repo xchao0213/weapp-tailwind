@@ -266,7 +266,7 @@ export default function resolveConfig(configs) {
       darkMode: false,
       prefix: '',
       important: false,
-      separator: ':',
+      separator: '_',
       variantOrder: defaultConfig.variantOrder,
     },
   ]

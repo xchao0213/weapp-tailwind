@@ -27,21 +27,21 @@ export default function () {
       },
       options
     )
-    matchUtilities(
-      {
-        via: (value) => {
-          let transparentToValue = transparentTo(value)
+    // matchUtilities(
+    //   {
+    //     via: (value) => {
+    //       let transparentToValue = transparentTo(value)
 
-          return {
-            '--tw-gradient-stops': `var(--tw-gradient-from), ${toColorValue(
-              value,
-              'via'
-            )}, var(--tw-gradient-to, ${transparentToValue})`,
-          }
-        },
-      },
-      options
-    )
+    //       return {
+    //         '--tw-gradient-stops': `var(--tw-gradient-from), ${toColorValue(
+    //           value,
+    //           'via'
+    //         )}, var(--tw-gradient-to, ${transparentToValue})`,
+    //       }
+    //     },
+    //   },
+    //   options
+    // )
     matchUtilities(
       {
         to: (value) => {
