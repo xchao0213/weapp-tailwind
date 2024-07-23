@@ -2,32 +2,22 @@
     <a href="https://tailwindcss.com/" target="_blank">
       <img alt="Tailwind CSS" width="350" src="https://refactoringui.nyc3.cdn.digitaloceanspaces.com/tailwind-logo.svg">
     </a><br>
-    A utility-first CSS framework for rapidly building custom user interfaces.
+    一个小程序使用tailwind的解决方案
 </p>
 
-<p>
-    <a href="https://github.com/tailwindlabs/tailwindcss/actions"><img src="https://img.shields.io/github/workflow/status/tailwindlabs/tailwindcss/Node.js%20CI" alt="Build Status"></a>
-    <a href="https://www.npmjs.com/package/tailwindcss"><img src="https://img.shields.io/npm/dt/tailwindcss.svg" alt="Total Downloads"></a>
-    <a href="https://github.com/tailwindcss/tailwindcss/releases"><img src="https://img.shields.io/npm/v/tailwindcss.svg" alt="Latest Release"></a>
-    <a href="https://github.com/tailwindcss/tailwindcss/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/tailwindcss.svg" alt="License"></a>
-</p>
 
 ------
 
-## Documentation
+## 什么是weapp-tailwind
 
-For full documentation, visit [tailwindcss.com](https://tailwindcss.com/).
+使用tailwind的2.2.19版本代码，经过一些操作后，生成一个小程序端适用的css文件。
 
-## Community
+> 操作主要包含：关闭base和components，将rem改为px，替换color为最新版本的tailwind的配色等。
 
-For help, discussion about best practices, or any other conversation that would benefit from being searchable:
+## 为什么weapp-tailwind会产生
 
-[Discuss Tailwind CSS on GitHub](https://github.com/tailwindcss/tailwindcss/discussions)
+tailwind作为一优秀的css框架，可以显著提高前端程序员的效率，但是在小程序端不能直接使用tailwind，最主要的是1.5，1/2，[14px]这样的写法，小程序不支持，[weapp-tailwindcss](https://github.com/sonofmagic/weapp-tailwindcss)可以支持基本上tailwindcss的所有特性，但是它是将整个小程序的代码，包括wxml和wxss文件中的class都改了名，使用上比较重。而hover,focus等特征，其实在小程序端没什么用，在我看来，小程序端只需要工具类的样式，基于这些考虑，尝试了这个项目。
 
-For casual chit-chat with others using the framework:
+## 如何使用weapp-tailwind
 
-[Join the Tailwind CSS Discord Server](https://discord.gg/7NF8GNe)
-
-## Contributing
-
-If you're interested in contributing to Tailwind CSS, please read our [contributing docs](https://github.com/tailwindcss/tailwindcss/blob/master/.github/CONTRIBUTING.md) **before submitting a pull request**.
+在release页面，下载tailwind.css或tailwind.min.css，放入小程序，引入即可。
